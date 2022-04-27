@@ -132,12 +132,6 @@ p {
   margin-right: 10px;
   
 }
-/* .auth-nav .link .auth-icon {
-  fill: currentColor;  
-}
-.auth-nav .link:hover .auth-icon {
-  fill: currentColor;  
-} */
 
 .ref-icon {
   align-items: center;
@@ -655,10 +649,27 @@ cursor: pointer;
   letter-spacing: 0.01em;
   color:var(--paragraph-text-color);
 }
+.area {
+  width: 448px;
+  height: 138px;
+  margin-bottom: 20px;
+}
 .modal-icon {
   position: absolute;
   top: 11px;
   left: 12px;
+}
+.modal-agreed {
+  position: relative;
+  font-size: 14px;
+  line-height: 1.71px;
+  color: var(--paragraph-text-color);
+}
+.contract {
+  display: contents;
+  position: absolute;
+  text-decoration: underline;
+  color: var(--animation-color);
 }
 
 
