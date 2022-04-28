@@ -631,11 +631,17 @@ cursor: pointer;
   padding-left: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  
+}
+.modal-icon {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function:
+  cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input:focus + .modal-icon,
 .modal-input:not(:placeholder-shown) + .modal-icon {
-  fill: var(--animation-color);
-  
+  fill: var(--animation-color);  
 }
 .modal-textarea {
   width: 448px;
@@ -675,10 +681,15 @@ cursor: pointer;
 }
 .modal-icon-check {
   position: absolute;
-  fill: var(--secondary-color);  
+  fill: var(--secondary-color); 
+  transition-property: fill,
+  background-color;
+  transition-duration: 250ms;
+  transition-timing-function:
+  cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-check {
-  appearance: none;
+  appearance: none;  
 }
 .modal-check:checked + .modal-icon-check {
 fill: var(--secondary-color);
