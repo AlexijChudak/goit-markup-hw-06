@@ -666,10 +666,19 @@ cursor: pointer;
   margin-left: 12px;
   margin-bottom: 30px;
 }
+.square {
+  width: 17px;
+  height: 17px;
+  border: 1px solid var(--main-text-color);
+  border-radius: 4px;
+
+}
 .modal-icon-check {
-  fill: var(--secondary-color);
-  stroke:var(--main-text-color);
-  stroke-width: 3px;
+  position: absolute;
+  fill: var(--secondary-color);  
+}
+.modal-check {
+  appearance: none;
 }
 .modal-check:checked + .modal-icon-check {
 fill: var(--secondary-color);
@@ -690,9 +699,6 @@ background-color: var(--animation-color);
 .contract {  
   text-decoration: underline;
   color: var(--animation-color);
-}
-.modal-icon-check {
-  position: absolute;
 }
 .submit {
   margin: 0 auto;
